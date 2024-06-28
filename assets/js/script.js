@@ -21,7 +21,7 @@ function updateResults() {
     document.getElementById("pensionNet").textContent = pensionNet.toFixed(0);
     document.getElementById("difference").textContent = difference.toFixed(0);
   } else {
-    document.getElementById("pensionNet2").textContent = "";
+    document.getElementById("pensionNet").textContent = "";
     document.getElementById("difference").textContent = "";
   }
 }
