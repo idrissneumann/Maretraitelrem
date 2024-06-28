@@ -96,9 +96,6 @@ label {
 .input-container {
     position: relative;
     width: 100%;
-    /* Définir la largeur du conteneur */
-    /* margin-bottom: 0px;
-    /* Espace entre l'input et le bouton */
 }
 
 .input-button-container {
@@ -107,20 +104,15 @@ label {
 
 .input {
     width: 100%;
-    /* Assurer que l'input prenne toute la largeur du conteneur */
     box-sizing: border-box;
     font-size: 20px;
     background-color: rgba(255, 255, 255, 0.8) !important;
     border-radius: 0.8em;
-    /* Augmente la taille du texte */
     padding-left: 15px;
     padding-right: 25px;
-    /* Espace pour le symbole de la devise */
     height: 40px;
-    /* Définir une hauteur pour l'input */
 }
 
-/* Styles pour supprimer les flèches dans les champs de type number */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
