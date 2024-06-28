@@ -1,5 +1,16 @@
 stages:
+  - publish
   - deploy
+
+mirror:
+  stage: publish
+  script:
+    - chmod +x ./ci/mirror.sh
+    - setsid ./ci/mirror.sh
+  only:
+    - /^(main.*)$/
+  tags:
+    - mirror
 
 deploy:
   stage: deploy
