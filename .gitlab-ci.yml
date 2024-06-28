@@ -1,0 +1,12 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+    - chmod +x ./ci/deploy.sh
+    - ./ci/deploy.sh
+  only:
+    - /^(main).*$/
+  tags:
+    - web

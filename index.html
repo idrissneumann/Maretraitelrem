@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réformons la retraite à outrance !</title>
+    <meta name="description"
+        content="A force de réformer la retraite, il ne restera plus rien alors que les caisses sont excédentaires.">
+    <link rel="stylesheet" href="./assets/css/foundation.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Réformons la retraite à outrance !">
+    <meta property="og:url" content="maretraitelrem.fr">
+    <meta property="og:image" content="https://maretraitenupes.fr/og.jpg">
+    <meta property="og:description"
+        content="A force de réformer la retraite, il ne restera plus rien alors que les caisses sont excédentaires.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Réformons la retraite à outrance !">
+    <meta name="twitter:description"
+        content="Pour accélerer la privatisation des fonds de pension, Ensemble (ou LREM) vont saccager ce qui reste malgré que les caisses soient excédentaires.">
+    <meta name="twitter:image" content="https://maretraitelrem.fr/assets/og/og.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+</head>
+
+<body>
+    <main style="padding-bottom: 5em;">
+        <div style="display: flex; flex-wrap: wrap; gap:3em; justify-items: center;" class="wrapper">
+
+            <div class="container container--clean" style="padding: 1em 0; ">
+                <div style="position:sticky; top: 0; ">
+                    <h1
+                        style="font-weight: 800; text-transform: uppercase; display: flex; flex-direction: column; line-height: 1.1em; padding-bottom: 0.5em; font-size: 3.5em;">
+                        <span style="font-weight: 400;">Réformons</span><span style="font-weight: 400;">
+                            la retraite</span> <span> à outrance !</span>
+                    </h1>
+
+                    <p>
+                        <span>
+                            Ce simulateur s'appuie sur rien du tout de solide, à peu près du même niveau de malhonneteté auquel LREM nous a habitué dans le débat publique.
+                        </span>
+                        LREM / Ensmble ont déjà fait des réformes à outrance au point d'avoir des caisses en excédent pour combler le déficit publique du à leurs erreurs de gestion, mais c'est pas finit, il faudra tout grapiller jusqu'au dernier cent.</b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+
+                <div class="container">
+                    <h5 style="font-weight: 600; text-align: center;">Simulateur de pension de retraite</h5>
+                    <form id="pensionForm" onsubmit="return mySubmitFunction(event)">
+                        <label for="pension">Votre pension mensuelle nette (après CSG) :
+                        </label>
+                        <div class="input-button-container">
+                            <div class="input-container">
+                                <div class="icon-container">
+                                    <span class="currency">€</span>
+                                </div>
+                                <input class="input" type="number" id="pension" name="pension" value="1200" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div
+                    style="display: flex; flex-wrap: wrap; flex-direction: column; width: 100%; justify-content: center; gap: 1em; padding-top: 1em;">
+                    <div class="container"
+                        style="margin-top: 0; display: flex; justify-content: space-between; flex-direction: column;">
+                        <h5 style="text-align: center;">
+                            <div style="font-weight: 350;">Avec une majorité de députés</div>
+                            <div style="font-weight: 350; color: #EE2C17; font-weight: bold;">NUPES/NFP</div>
+                        </h5>
+                        <h5 style="text-align: center;">
+                            <div style="font-weight: 350;">vous recevrez :</div>
+                        </h5>
+
+                        <h2 style="text-align: center; font-weight: 600; font-size: 2.5em;">
+                            <span id="pensionNet2"></span> €
+                        </h2>
+
+                        <div class="callout alert"
+                            style="margin-bottom: 0;background: rgba(255, 255, 255, 0.8); color: #EE2C17; text-align: center; font-weight: 600; border: none;">
+                            <span id="difference" style="font-size: 30px; font-weight: bold;"></span><span
+                                style="font-size: 30px; font-weight: bold;">
+                                €</span><br>
+                            de retraite <span id="win_lose">perdue</span> chaque année
+                        </div>
+                        </p>
+                    </div>
+                    <div class="container" style="display: flex; justify-items: center; justify-content: center;">
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_button_whatsapp"></a>
+                            <a class="a2a_button_email"></a>
+                            <a class="a2a_button_copy_link"></a>
+                        </div>
+                    </div>
+
+                    <div class="container container--clean"
+                        style="display: flex; justify-items: center; justify-content: center;">
+                        <a style="background-color: transparent; border: 1px solid white; color: white; font-size: 0.7em; border-radius: 1em; height: 1.5em; padding:0 1em; margin-bottom: 0; line-height: 1.2em;"
+                            target="_blank" href="./mentions-legales.html">
+                            Mentions légales
+                        </a>
+                    </div>
+                    <span id="pensionNet1" style="display: none;"></span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script>
+        var a2a_config = a2a_config || {};
+        a2a_config.locale = "fr";
+    </script>
+    <script async src="./assets/js/page.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
