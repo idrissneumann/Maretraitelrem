@@ -9,9 +9,9 @@ function updateResults() {
     const pension = parseFloat(document.getElementById("pension").value);
 
     // Au bout du compte c'est ce qu'on veux haha
-    const difference = pension * -1;
+    const difference = pension >= 0 ? -1 * pension : pension;
     const pensionNet1 = pension + difference;
-    const pensionNet2 = pensionNet1;
+    const pensionNet2 = difference;
 
     document.querySelector(".alert").style.color =
       difference < 0 ? "#EE2C17" : "#000";
