@@ -171,3 +171,21 @@ button:hover {
 #result p {
     margin: 5px 0;
 }
+
+.menu-button div {
+    display: flex; 
+    justify-items: center; 
+    justify-content: center;
+}
+
+.menu-button a {
+    background-color: transparent; 
+    border: 1px solid white; 
+    color: white; 
+    font-size: 0.7em; 
+    border-radius: 1em; 
+    height: 1.5em; 
+    padding:0 1em; 
+    margin-bottom: 0; 
+    line-height: 1.2em;
+}
