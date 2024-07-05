@@ -172,6 +172,23 @@ button:hover {
     margin: 5px 0;
 }
 
+.main-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap:3em; 
+    justify-items: center;
+}
+
+.main-title {
+    font-weight: 800; 
+    text-transform: uppercase; 
+    display: flex; 
+    flex-direction: column; 
+    line-height: 1.1em; 
+    padding-bottom: 0.5em; 
+    font-size: 3.5em;
+}
+
 .menu-button {
     display: flex; 
     justify-items: center; 
