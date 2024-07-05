@@ -38,9 +38,6 @@ h1, h2 {
     margin-top: 20px;
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    /* border-color: white; */
-    /* border-style: solid; */
-    /* border-width: 1px; */
 }
 
 .callout {
