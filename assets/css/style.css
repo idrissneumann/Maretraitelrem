@@ -172,7 +172,7 @@ button:hover {
     margin: 5px 0;
 }
 
-.menu-button div {
+.menu-button {
     display: flex; 
     justify-items: center; 
     justify-content: center;
